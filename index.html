@@ -3,22 +3,112 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Video Editor Portfolio</title>
+  <title>DAYO — Video Editor & Motion Designer</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Syne:wght@700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>Selected Works</h1>
-    <p>Scroll down to explore recent edits, motion graphics, and cuts.</p>
+
+  <!-- Top Status Bar -->
+  <header class="status-bar">
+    <div class="status-left">THE BEST EDITOR YOU'VE NEVER HEARD OF</div>
+    <div class="status-right">STATUS <span class="status-indicator">OPEN</span> 24-48 HRS</div>
   </header>
 
-  <main class="grid-container" id="feed"></main>
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="grid-bg"></div>
 
-  <div id="loader" class="loader">
-    <div class="spinner"></div>
-    <p>Loading projects...</p>
+    <!-- Center Floating NLE Card -->
+    <div class="nle-card-wrapper">
+      <div class="nle-badge tag-top-left">
+        <span class="mono-dim">V2 / MOTION</span>
+        <span class="mono-green">KEYFRAMES</span>
+      </div>
+      <div class="nle-badge tag-top-right">
+        <span class="mono-dim">V1 / FOOTAGE</span>
+        <span class="mono-light">CUT • TRIM • REFRAME</span>
+      </div>
+
+      <div class="nle-preview-window">
+        <div class="nle-screen-text">MAKE IT HIT.</div>
+        <div class="nle-timeline-bar">
+          <div class="track t1"></div>
+          <div class="track t2 active-track">
+            <div class="playhead-needle"></div>
+          </div>
+          <div class="track t3"></div>
+        </div>
+        <div class="nle-scrub-label">THE EDIT IS THE MESSAGE</div>
+      </div>
+
+      <div class="nle-badge tag-bottom-right">
+        <span class="mono-dim">AUDIO</span>
+        <span class="mono-blue">▶ MIX</span>
+      </div>
+    </div>
+
+    <!-- Giant Name Header -->
+    <div class="hero-title-group">
+      <h1 class="hero-title">DAYO<span class="accent-dot">.</span></h1>
+      <p class="hero-tagline">
+        I make people stop scrolling — through pacing, motion, sound and edits built around the moment that matters.
+      </p>
+    </div>
+
+    <!-- CTAs -->
+    <div class="hero-cta-group">
+      <a href="#work" class="btn-lime">VIEW WORK ↓</a>
+      <a href="mailto:your-email@example.com" class="btn-ghost">START A PROJECT ↗</a>
+    </div>
+
+    <div class="scroll-cue">SCROLL ─── ↓</div>
+    <div class="footer-hud hud-left">001 / MASTER</div>
+    <div class="footer-hud hud-right">FRAME /</div>
+  </section>
+
+  <!-- Marquee Ribbon -->
+  <div class="marquee-strip">
+    <div class="marquee-track">
+      <span>PODCAST CLIPS ✦ MOTION GRAPHICS ✦ COMMENTARY ✦ SHORTS ✦ SPEED EDITS ✦ MOVIE STYLE ✦ PODCAST CLIPS ✦ MOTION GRAPHICS ✦ COMMENTARY ✦ SHORTS ✦ SPEED EDITS ✦ MOVIE STYLE ✦</span>
+      <span>PODCAST CLIPS ✦ MOTION GRAPHICS ✦ COMMENTARY ✦ SHORTS ✦ SPEED EDITS ✦ MOVIE STYLE ✦ PODCAST CLIPS ✦ MOTION GRAPHICS ✦ COMMENTARY ✦ SHORTS ✦ SPEED EDITS ✦ MOVIE STYLE ✦</span>
+    </div>
   </div>
 
-  <script src="script.js"></script>
-</body>
-</html>
+  <!-- Work Showcase -->
+  <main class="timeline-section" id="work">
+    
+    <div class="section-header">
+      <span class="section-label">01 / SELECTED WORK</span>
+      <h2 class="section-title">The timeline,<br/>but alive.</h2>
+      <p class="section-note">Every reel is already playing: a silent five-second glimpse before you open the full project.</p>
+    </div>
+
+    <!-- Featured Wide Item (01) -->
+    <article class="timeline-card featured-card" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1">
+      <div class="card-meta-top">
+        <span class="mono-meta">FEATURED / <span class="mono-green">SPD_EDIT</span></span>
+        <span class="mono-dim">V1 + V2 + A1</span>
+      </div>
+      <div class="card-media">
+        <img src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=1600&q=80" alt="Speed Edits" />
+        <div class="subtitle-overlay">LIGHTER SHOULD BE IN MY ROOM</div>
+      </div>
+      <div class="timeline-scrubber">
+        <div class="scrub-segment green"></div>
+        <div class="scrub-segment dim"></div>
+        <div class="scrub-segment dim"></div>
+      </div>
+      <div class="card-meta-bottom">
+        <div>
+          <span class="card-num">01</span>
+          <h3 class="card-title">Speed edits</h3>
+          <p class="card-desc">Fast cuts, hard transitions, kinetic type and beat-aware pacing built for attention.</p>
+        </div>
+        <span class="badge-pill">SPD_EDIT</span>
+      </div>
+    </article>
+
+    <!-- 2-Column Grid -->
